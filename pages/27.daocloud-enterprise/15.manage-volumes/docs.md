@@ -41,7 +41,7 @@ sudo convoy daemon --drivers vfs --driver-opts vfs.path=/data
 ![](convoy_volume_01.jpg)
 
 使用 Convoy 驱动的存储卷可以在 DCE 控制台的远程卷中查看详细信息：
-![](convoy_volume_02.jpg)
+![](convoy_volume_02.png)
 
 >>>>> 更多关于 Convoy 的信息，可以参考[Convoy](https://github.com/rancher/convoy)
 
@@ -62,7 +62,7 @@ sudo convoy daemon --drivers vfs --driver-opts vfs.path=/data
 ## 存储卷创建选项
 
 在创建存储卷的时候，DCE 为用户提供了添加创建选项的操作：
-![](volume_option.jpg)
+![](volume_option.png)
 
 需要注意的是，如果用户使用 local 作为存储卷的驱动，那么不可填写这栏，因为目前 Docker 内建的 local 存储卷驱动不会接受任何选项。
 对于 local 之外的其他存储驱动，都用提供了各自独有的选项，使用不同的驱动方式，就必须使用不同的选项，没有统一的标准，故而需要用户查看这些驱动的官方文档，了解它们为用户提供了哪些选项。
