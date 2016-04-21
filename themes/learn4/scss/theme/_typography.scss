@@ -1,7 +1,6 @@
 // Body Base
 body {
 	font-family: $font-family-default;
-    letter-spacing: -0.03rem;
 	font-weight: 400;
 }
 
@@ -10,22 +9,21 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $font-family-header;
 	font-weight: 400;
 	text-rendering: optimizeLegibility;
-	line-height: 150%;
-	letter-spacing: -0px;
+	line-height: 1.5;
 }
 
 h1 {
 	text-align: center;
-	letter-spacing: -3px;
+	// letter-spacing: -3px;
 }
 
-h2 {
-	letter-spacing: -2px;
-}
+// h2 {
+// 	letter-spacing: -2px;
+// }
 
-h3 {
-	letter-spacing: -1px;
-}
+// h3 {
+// 	letter-spacing: -1px;
+// }
 
 // Blockquote
 blockquote {
@@ -134,7 +132,8 @@ code {
 	background: $code-bg;
 	color: darken($code-text,10%);
 	padding: .2rem .4rem;
-  border-radius: 3px;
+    border-radius: 3px;
+    font-size: 16px;
 }
 
 pre {
@@ -149,8 +148,8 @@ pre {
 	code {
 		color: $pre-text;
 		background: inherit;
-		font-size: 1rem;
-		line-height: 1.5em;
+		font-size: 16px;
+		line-height: 1.5;
 	}
 }
 
